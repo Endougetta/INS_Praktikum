@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zeugnisse</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<iframe src="navigation.html" name="navigation" class="navframe"></iframe>
+
+<h1>Zeugnisse anfordern</h1>
+
+<p>Wenn ich Ihr Interesse geweckt habe, können Sie hier eine Kopie meiner Zeugnisse anfordern.
+  Bitte füllen Sie die Felder aus und klicken Sie auf <strong>„Absenden“</strong>,
+  um mir eine E-Mail zu senden.</p>
+
+ 
+
+<form action="mailto:boubimad03@gmail.com" method="post" enctype="text/plain">
+<fieldset>
+<label>
+  <input type="checkbox" name="docs" value="Abiturzeugnis"> AbiturZeugnis
+  </label>
+<label>
+<input type="checkbox" name="docs" 
+  value="Realschulabschluss"> Realschulabschluss
+  </label>
+  <input type="checkbox" name="docs"
+  value="CodingZertifikat"> CodingZertifikat
+  </label>
+</fieldset>
+
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" placeholder="Ihr Name"><br><br>
+
+  <label for="email">E-Mail:</label><br>
+  <input type="email" id="email" name="email" placeholder="beispiel@mail.de"><br><br>
+
+
+
+  <label for="kommentar">Ihre Nachricht:</label><br>
+  <textarea id="kommentar" name="kommentar" rows="4" cols="40" placeholder="z. B. Bitte senden Sie mir eine Kopie Ihres Abiturzeugnisses."></textarea><br><br>
+
+  <input type="submit" value="Absenden">
+  <input type="reset" value="Zurücksetzen">
+</form>
+
+<p><em>Hinweis:</em> Beim Klicken auf „Absenden“ öffnet sich nix.</p>
+</body>
+</html>

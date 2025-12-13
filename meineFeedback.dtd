@@ -1,0 +1,30 @@
+<!ELEMENT feedback (
+        anrede,
+        vorname,
+        name,
+        email,
+        telefon
+        url,
+        alter,
+        aufmerksam,
+        note_inhalt,
+        note_design,
+        verbesserung,
+        besuch,
+        zeitpunkt
+        )>
+
+<!ELEMENT anrede (#PCDATA)>
+<!ELEMENT vorname (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT telefon (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT alter (#PCDATA)>
+<!ELEMENT aufmerksam (#PCDATA)>
+<!ELEMENT note_inhalt (#PCDATA)>
+<!ELEMENT note_design (#PCDATA)>
+<!ELEMENT verbesserung (#PCDATA)>
+<!ELEMENT besuch (#PCDATA)>
+<!ELEMENT zeitpunkt (#PCDATA)>
+>
