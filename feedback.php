@@ -124,6 +124,7 @@ if ($keineFehler) {
 
     // Dokument starten
     $xml->startDocument('1.0', 'UTF-8');
+    $xml->writeDTD('feedback',null,'meineFeedback.dtd');
     $xml->setIndent(true);
 
     // Wurzel-Element
