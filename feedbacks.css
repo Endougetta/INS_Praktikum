@@ -1,0 +1,38 @@
+.feedback-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.feedback-table th,
+.feedback-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Erste Zeile */
+.headline th {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+/* Zweite Zeile */
+.header th {
+    background-color: red;
+    color: white;
+    font-style: italic;
+}
+
+/* Normale Datenzeilen */
+.feedback-table td {
+    background-color: white;
+    font-weight: normal;
+}
+
+/* Schlechte Bewertungen */
+.kritisch {
+    color: red;
+    font-weight: bold;
+}
