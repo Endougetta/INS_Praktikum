@@ -58,6 +58,17 @@
     padding: 6px;
   }
 
+/* === Footer-Link-Box === */
+.footer-box {
+  max-width: 700px;          /* Box nicht zu breit */
+  margin: 4rem auto;         /* zentriert + Abstand */
+  padding: 1.5rem 2rem;
+
+  background-color: white;   /* Karten-Look */
+  border-radius: 12px;       /* abgerundete Ecken */
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* SCHATTEN */
+}
 
 
 
