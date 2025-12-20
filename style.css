@@ -39,7 +39,7 @@
   display: block;
 }
 
-}
+
 .site-header {
   position: fixed;
   top: 0;
@@ -51,6 +51,7 @@
   background-color: #2f3e4e;
   z-index: 1000;
 }
+
 
 .top-nav {
   position: fixed;
