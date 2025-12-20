@@ -6,8 +6,12 @@
     color: black;
   }
 
-  h1 {
+.title-main {
   text-align: center;
+}
+
+.title-section {
+  margin-top: 2rem;
 }
 
 
