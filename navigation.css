@@ -4,22 +4,22 @@ html, body {
   padding: 0;
 }
 
-/* NAVIGATION */
-.nav-inner ul {
+/* NAVIGATION – JETZT RICHTIGE KLASSE */
+.top-nav ul {
   list-style: none;     /* entfernt Punkte */
   margin: 0;
   padding: 0 2rem;
 
-  display: flex;        /* ← DAS macht nebeneinander */
-  gap: 2rem;            /* Abstand zwischen Wörtern */
+  display: flex;        /* ← MACHT NEBENEINANDER */
+  gap: 2rem;
   align-items: center;
 
   height: 60px;
 }
 
 /* LINKS */
-.nav-inner a {
-  color: white;         /* ← weiße Schrift */
+.top-nav a {
+  color: white;
   text-decoration: none;
   font-weight: 500;
 }
