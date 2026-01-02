@@ -83,7 +83,7 @@
   display: grid;                 /* NEU */
   grid-template-columns: repeat(2, 1fr); /* 2 Spalten */
   gap: 1rem 2rem;                /* Abstand */
-
+}
   .cv-header{
   text-align: center;
   margin: 2.5rem 0 2rem;   /* Abstand nach oben/unten */
@@ -136,7 +136,7 @@
 
 
   /* iframe, navigation, restliche Styles */
-}
+
 @media print {
 
   iframe,
