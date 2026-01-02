@@ -1,52 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Zeugnisse</title>
-    <link rel="stylesheet" href="style.css">
-
+  <title>Zeugnisse – Imad Boubkar</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<iframe src="navigation.html" name="navigation" class="navframe"></iframe>
+<header class="site-header">
+  <iframe src="navigation.html" class="nav-iframe" title="Navigation"></iframe>
+</header>
 
-<h1>Zeugnisse anfordern</h1>
+<main class="content">
 
-<p>Wenn ich Ihr Interesse geweckt habe, können Sie hier eine Kopie meiner Zeugnisse anfordern.
-  Bitte füllen Sie die Felder aus und klicken Sie auf <strong>„Absenden“</strong>,
-  um mir eine E-Mail zu senden.</p>
+  <!-- ===== EINLEITUNG ===== -->
+  <section class="card">
+    <h1>Zeugnisse anfordern</h1>
 
- 
+    <p>
+      Wenn ich Ihr Interesse geweckt habe, können Sie hier eine Kopie
+      meiner Zeugnisse anfordern.  
+      Bitte wählen Sie die gewünschten Dokumente aus und senden Sie mir
+      eine kurze Nachricht.
+    </p>
+  </section>
 
-<form action="mailto:boubimad03@gmail.com" method="post" enctype="text/plain">
-<fieldset>
-<label>
-  <input type="checkbox" name="docs" value="Abiturzeugnis"> AbiturZeugnis
-  </label>
-<label>
-<input type="checkbox" name="docs" 
-  value="Realschulabschluss"> Realschulabschluss
-  </label>
-  <input type="checkbox" name="docs"
-  value="CodingZertifikat"> CodingZertifikat
-  </label>
-</fieldset>
+  <!-- ===== FORMULAR ===== -->
+  <section class="card">
+    <h2>Auswahl der Zeugnisse</h2>
 
-  <label for="name">Name:</label><br>
-  <input type="text" id="name" name="name" placeholder="Ihr Name"><br><br>
+    <form action="mailto:boubimad03@gmail.com" method="post" enctype="text/plain">
 
-  <label for="email">E-Mail:</label><br>
-  <input type="email" id="email" name="email" placeholder="beispiel@mail.de"><br><br>
+      <fieldset>
+        <legend>Benötigte Dokumente</legend>
 
+        <label>
+          <input type="checkbox" name="docs" value="Abiturzeugnis">
+          Abiturzeugnis
+        </label><br>
 
+        <label>
+          <input type="checkbox" name="docs" value="Realschulabschluss">
+          Realschulabschluss
+        </label><br>
 
-  <label for="kommentar">Ihre Nachricht:</label><br>
-  <textarea id="kommentar" name="kommentar" rows="4" cols="40" placeholder="z. B. Bitte senden Sie mir eine Kopie Ihres Abiturzeugnisses."></textarea><br><br>
+        <label>
+          <input type="checkbox" name="docs" value="Coding-Zertifikat">
+          Coding-Zertifikat
+        </label>
+      </fieldset>
 
-  <input type="submit" value="Absenden">
-  <input type="reset" value="Zurücksetzen">
-</form>
+      <br>
 
-<p><em>Hinweis:</em> Beim Klicken auf „Absenden“ öffnet sich nix.</p>
+      <label for="name">Ihr Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Ihr Name"><br><br>
+
+      <label for="email">Ihre E-Mail:</label><br>
+      <input type="email" id="email" name="email" placeholder="beispiel@mail.de"><br><br>
+
+      <label for="kommentar">Ihre Nachricht:</label><br>
+      <textarea id="kommentar" name="kommentar" rows="4"
+        placeholder="z. B. Bitte senden Sie mir eine Kopie meines Abiturzeugnisses.">
+      </textarea><br><br>
+
+      <input type="submit" value="Absenden">
+      <input type="reset" value="Zurücksetzen">
+    </form>
+
+    <p>
+      <em>
+        Hinweis: Beim Absenden wird Ihr E-Mail-Programm geöffnet
+        und eine Nachricht an mich vorbereitet.
+      </em>
+    </p>
+  </section>
+
+</main>
+
 </body>
 </html>

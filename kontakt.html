@@ -5,47 +5,75 @@
   <title>Kontakt – Imad Boubkar</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<header class="site-header">
+  <iframe src="navigation.html" class="nav-iframe" title="Navigation"></iframe>
+</header>
 
-<iframe src="navigation.html" name="navigation" class="navframe"></iframe>
+<main class="content">
 
+  <!-- ===== EINLEITUNG ===== -->
+  <section class="card">
+    <h1>Kontakt</h1>
+    <p>
+      Sie möchten mit mir in Kontakt treten?
+      Ich freue mich über Ihre Nachricht – ob für Rückfragen oder
+      weitere Informationen zu meiner Bewerbung.
+    </p>
+  </section>
 
-<main>
-  <p>Sie möchten mit mir in Kontakt treten?
-    Ich freue mich über Ihre Nachricht – ob für Rückfragen oder weitere Informationen zu meiner Bewerbung.</p>
+  <!-- ===== KONTAKTDATEN ===== -->
+  <section class="card">
+    <h2>Kontaktdaten</h2>
 
-  <h2>Kontaktdaten</h2>
-  <address>
-    <strong>Imad E. Boubkar </strong><br>
-    Röttgersweg 17<br>
-    45896 Gelsenkirchen<br>
-    Deutschland<br><br>
-    📧 <a href="mailto:boubimad03@gmail.com?subject=Kontaktanfrage%20zu%20Ihrer%20Bewerbung">boubimad03@gmail.com</a><br>
-    📞 <a href="tel:+491782474710">+49 157 82474710</a>
-  </address>
+    <address>
+      <strong>Imad E. Boubkar</strong><br>
+      Röttgersweg 17<br>
+      45896 Gelsenkirchen<br>
+      Deutschland<br><br>
 
-  <h2>Kontaktformular</h2>
-  <form action="mailto:boubimad03@gmail.com" method="post" enctype="text/plain">
-    <label for="name">Ihr Name:</label><br>
-    <input type="text" id="name" name="name" placeholder="Name"><br><br>
+      📧
+      <a href="mailto:boubimad03@gmail.com?subject=Kontaktanfrage%20zu%20Ihrer%20Bewerbung">
+        boubimad03@gmail.com
+      </a><br>
 
-    <label for="email">Ihre E-Mail:</label><br>
-    <input type="email" id="email" name="email" placeholder="beispiel@mail.de"><br><br>
+      📞
+      <a href="tel:+4915782474710">
+        +49 157 82474710
+      </a>
+    </address>
+  </section>
 
-    <label for="nachricht">Ihre Nachricht:</label><br>
-    <textarea id="nachricht" name="nachricht" rows="4" cols="40" placeholder="Ihre Nachricht..."></textarea><br><br>
+  <!-- ===== KONTAKTFORMULAR ===== -->
+  <section class="card">
+    <h2>Kontaktformular</h2>
 
-    <input type="submit" value="Nachricht senden">
-    <input type="reset" value="Zurücksetzen">
-  </form>
+    <form action="mailto:boubimad03@gmail.com" method="post" enctype="text/plain">
 
-  <p><em>Hinweis:</em> Das Formular öffnet beim Absenden automatisch Ihr E-Mail-Programm und trägt die Nachricht dort ein.</p>
+      <label for="name">Ihr Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Ihr Name"><br><br>
+
+      <label for="email">Ihre E-Mail:</label><br>
+      <input type="email" id="email" name="email" placeholder="beispiel@mail.de"><br><br>
+
+      <label for="nachricht">Ihre Nachricht:</label><br>
+      <textarea id="nachricht" name="nachricht" rows="4" placeholder="Ihre Nachricht..."></textarea><br><br>
+
+      <input type="submit" value="Nachricht senden">
+      <input type="reset" value="Zurücksetzen">
+    </form>
+
+    <p>
+      <em>
+        Hinweis: Beim Absenden wird Ihr E-Mail-Programm geöffnet
+        und die Nachricht dort vorbereitet.
+      </em>
+    </p>
+  </section>
+
 </main>
-
-<footer>
-  <p>&copy; 2025 Imad Boubkar</p>
-</footer>
 
 </body>
 </html>
