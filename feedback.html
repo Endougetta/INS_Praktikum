@@ -3,280 +3,239 @@
 <head>
   <meta charset="UTF-8">
   <title>Feedback</title>
-    <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+  <!-- NAV WIE AUF ALLEN SEITEN -->
+  <header class="site-header">
+    <iframe
+      src="navigation.html"
+      class="nav-iframe"
+      title="Navigation">
+    </iframe>
+  </header>
 
-  <iframe src="navigation.html" name="navigation" class="nav-iframe"></iframe>
+  <!-- INHALT ZENTRIERT -->
+  <main class="content">
 
+    <!-- FORM IN "KARTE" WIE RESTLICHER STIL -->
+    <section class="card">
 
-<br>
-<br>
+      <h1>Feedback</h1>
 
-<form action="feedback.php" method="post" class="form-box">
+      <form action="feedback.php" method="post">
 
+        <!-- Anrede -->
+        <select name="anrede">                <!--Quest 1.2-->
+          <option>Herr</option>
+          <option>Frau</option>
+          <option>HS</option>
+        </select>
 
+        <br>
 
-<select name="anrede">                <!--Quest 1.2-->
-  <option>Herr</option>
-  <option>Frau</option>
-  <option>HS</option>
-</select>
+        <!-- Vorname -->
+        <label for="vorname">Vorname:</label>  <!--Quest 1.3-->
+        <input
+          name="vorname"
+          id="vorname"
+          type="text"
+          required
+          autocomplete="on"
+          autofocus>
 
-<br>
+        <br>
 
+        <!-- Nachname -->
+        <label for="name">name:</label>  <!--Quest 1.3-->
+        <input
+          name="name"
+          id="name"
+          type="text"
+          required
+          autocomplete="on">
 
-<label for="vorname">Vorname:</label>  <!--Quest 1.3-->
-<input
-name="vorname"
- id="vorname"
- type="text"
- required
- autocomplete="on"
- autofocus>
+        <br>
 
- <br>
+        <!-- Kopie Mail -->
+        <label for="KopieMail">Eine Kopie an meine Mail schicken</label>  <!--Quest 1.4-->
+        <input
+          id="KopieMail"
+          type="checkbox"
+          name="KopieMail">
 
- <label for="name">name:</label>  <!--Quest 1.3-->
- <input
-  name="name"
-  id="name"
-  type="text"
-  required
-  autocomplete="on"
-  >
-  <br>
+        <!-- Email -->
+        <label for="email_Input"></label> <!--Quest1.5-->
+        <input
+          id="email_Input"
+          type="email"
+          name="email_Input"
+          placeholder="Emailaddresse eingeben">
 
+        <br>
 
-<label for="KopieMail">Eine Kopie an meine Mail schicken</label>  <!--Quest 1.4-->
-<input
- id="KopieMail"
- type="checkbox"
- name="KopieMail"
- >
+        <!-- Rückfragen -->
+        <label for="rückfragen">Ich stehe für rückfragen zur verfügung</label>  <!--Quest1.6-->
+        <input
+          id="rückfragen"
+          type="checkbox"
+          name="rückfragen">
 
-<label for="email_Input"></label> <!--Quest1.5-->
-<input
-id="email_Input"
-type="email"
-name="email_Input"
-placeholder="Emailaddresse eingeben"
->
+        <br>
 
-<label for="rückfragen">Ich stehe für rückfragen zur verfügung</label>  <!--Quest1.6-->
-<input
-id="rückfragen"
-type="checkbox"
-name="rückfragen"
->
-<br>
+        <!-- Telefon -->
+        <label for="telefonnummer"></label>  <!--Quest1.6-->
+        <input
+          id="telefonnummer"
+          type="text"
+          name="telefonnummer"
+          placeholder="Ihre telefon nummer zb. 012345678 /+49176537283">
 
-<label for="telefonnummer"></label>  <!--Quest1.6-->
-<input
-id="telefonnummer"
-type="text"
-name="telefonnummer"
-placeholder="Ihre telefon nummer zb. 012345678 /+49176537283"
->
+        <br>
 
+        <!-- URL -->
+        <label for="URLLink">Ihre URl:</label>  <!--Quest 1.6-->
+        <input
+          id="URLLink"
+          type="url"
+          name="uRLLink">
 
- <label for="URLLink">Ihre URl:</label>  <!--Quest 1.6-->
- <input
-  id="URLLink"
-  type="url"
-  name="uRLLink"
-  >
-<br>
+        <br>
 
+        <!-- Alter -->
+        <label for="alter">Alter:</label>  <!--Quest 1.6-->
+        <input
+          id="alter"
+          type="number"
+          min="18"
+          max="99"
+          value="21"
+          name="alter">
 
-  <label for="alter">Alter:</label>  <!--Quest 1.6-->
-<input
-  id="alter"
-  type="number"
-  min="18"
-  max="99"
-  value="21"
-  name="alter"
-  >
+        <br>
 
-  <br>
+        <!-- Besuch -->
+        <label for="besuch">Ich werde sie wieder besuchen</label>  <!--Quest 1.7-->
+        <input
+          id="besuch"
+          type="checkbox"
+          name="besuch">
 
-<label for="besuch">Ich werde sie wieder besuchen</label>  <!--Quest 1.7-->
-<input
- id="besuch"
- type="checkbox"
- name="besuch"
- >
+        <br>
 
- <br>
+        <!-- Verbesserung -->
+        <label for="verbesserung">Was würden sie verbessern</label> <!--Quest 1.8-->
+        <textarea
+          id="verbesserung"
+          name="verbesserung"
+          rows="5"
+          cols="40"></textarea>
 
- <label for="verbesserung">Was würden sie verbessern</label> <!--Quest 1.8-->
- <textarea
-  id="verbesserung"
-  name="verbesserung"
-  rows="5"
-  cols="40"
-  >
-</textarea>
+        <br>
 
-<br>
+        <!-- Aufmerksam -->
+        <label for="aufmerksam">Wie sind sie auf meine Bewerbungseite aufmerksam geworden?</label> <!--Quest 1.9-->
+        <br>
 
-<label for="aufmerksam">Wie sind sie auf meine Bewerbungseite aufmerksam geworden?</label> <!--Quest 1.9-->
+        <select id="aufmerksam" name="aufmerksam">
 
-<br>
+          <optgroup label="Allgemein" id="aufmerksam">
+            <option>Zufall</option>
+            <option>Freunde/Bekannte</option>
+            <option>Frühere Nutzung</option>
+          </optgroup>
 
-<select id="aufmerksam" name=aufmerksam>
+          <optgroup label="Internet-Angebote" id="aufmerksam">
+            <option>Newsletter anderer Seiten</option>
+            <option>Suchmaschine</option>
+            <option>Linkliste</option>
+            <option>Forum/Gästebuch-Eintrag</option>
+            <option>Kostenlos/Gratis-Seite</option>
+          </optgroup>
 
-<optgroup label="Allgemein" id="aufmerksam">
-  <option>Zufall</option>
-  <option>Freunde/Bekannte</option>
-  <option>Frühere Nutzung</option>
-</optgroup>
+          <optgroup label="Medien" id="aufmerksam">
+            <option>Zeitung</option>
+            <option>Zeitschrift</option>
+            <option>Radio</option>
+            <option>Fernsehen</option>
+          </optgroup>
 
-<optgroup label="Internet-Angebote" id="aufmerksam">
-  <option>Newsletter anderer Seiten</option>
-  <option>Suchmaschine</option>
-  <option>Linkliste</option>
-  <option>Forum/Gästebuch-Eintrag</option>
-    <option>Kostenlos/Gratis-Seite</option>
+        </select>
 
-</optgroup>
+        <br>
+        <br>
 
- <optgroup label="Medien" id="aufmerksam">
-  <option>Zeitung</option>
-  <option>Zeitschrift</option>
-  <option>Radio</option>
-  <option>Fernsehen</option>
+        <!-- Note Inhalt -->
+        Welche Note würdest Du allgemein dem Inhalt geben? (1 = sehr gut, 6 = ungenügend)
+        <br>
 
- </optgroup>
+        <label for="1">1</label>
+        <input id="1" type="radio" name="a" value="1L">
 
-</select>
+        <label for="2">2</label>
+        <input id="2" type="radio" name="a" value="2L">
 
-<br>
+        <label for="3">3</label>
+        <input id="3" type="radio" name="a" value="3L">
 
-Welche Note würdest Du allgemein dem Inhalt geben? (1 = sehr gut, 6 = ungenügend)
-<br>
+        <label for="4">4</label>
+        <input id="4" type="radio" name="a" value="4L">
 
-<label for="1" >1</label>
+        <label for="5">5</label>
+        <input id="5" type="radio" name="a" value="5L">
 
-<input
-id="1"
-type="radio"
-name="a"
-value="1L"
->
+        <label for="6">6</label>
+        <input id="6" type="radio" name="a" value="6L">
 
-<label for="2" >2</label>
+        <br>
+        <br>
 
-<input
-id="2"
-type="radio"
-name="a"
-value="2L"
->
-<label for="3" >3</label>
+        <!-- Note Aussehen -->
+        Welche Note würdest Du allgemein dem Aussehen geben? (1 = sehr gut, 6 = ungenügend)
+        <br>
 
-<input
-id="3"
-type="radio"
-name="a"
-value="3L"
->
-<label for="4" >4</label>
+        <label for="1a">1</label>
+        <input id="1a" type="radio" name="b" value="1aL">
 
-<input
-id="4"
-type="radio"
-name="a"
-value="4L"
->
-<label for="5" >5</label>
+        <label for="2a">2</label>
+        <input id="2a" type="radio" name="b" value="2aL">
 
-<input
-id="5"
-type="radio"
-name="a"
-value="5L"
->
-<label for="6" >6</label>
-<input
-id="6"
-type="radio"
-name="a"
-value="6L"
->
-<br>
+        <label for="3a">3</label>
+        <input id="3a" type="radio" name="b" value="3aL">
 
-<br>
-Welche Note würdest Du allgemein dem Aussehen geben?  (1 = sehr gut, 6 = ungenügend)
-<br>
-<label for="1a" >1</label>
+        <label for="4a">4</label>
+        <input id="4a" type="radio" name="b" value="4aL">
 
-<input
-id="1a"
-type="radio"
-name="b"
-value="1aL"
->
-<label for="2a" >2</label>
+        <label for="5a">5</label>
+        <input id="5a" type="radio" name="b" value="5aL">
 
-<input
-id="2a"
-type="radio"
-name="b"
-value="2aL"
->
-<label for="3a" >3</label>
+        <label for="6a">6</label>
+        <input id="6a" type="radio" name="b" value="6aL">
 
-<input
-id="3a"
-type="radio"
-name="b"
-value="3aL"
->
-<label for="4a" >4</label>
+        <br>
+        <br>
 
-<input
-id="4a"
-type="radio"
-name="b"
-value="4aL"
->
-<label for="5a" >5</label>
-<input
-id="5a"
-type="radio"
-name="b"
-value="5aL"
->
-<label for="6a" >6</label>
+        <!-- Passwort -->
+        <label for="Internet-Sprachen">Passwort- / Spamschutz: Bitte gib Internetsprachen ein</label>
+        <input
+          name="password"
+          id="Internet-Sprachen"
+          type="password">
 
-<input
-id="6a"
-type="radio"
-name="b"
-value="6aL"
+        <br>
+        <br>
 
->
-<br>
+        <!-- Buttons -->
+        <input type="submit" value="Absenden">
+        <input type="reset" value="Zurücksetzen">
 
-<label for="Internet-Sprachen">Passwort- / Spamschutz: Bitte gib Internetsprachen ein</label>
-<input
-  type="password"
+      </form>
 
+    </section>
 
-name="password"
- id="Internet-Sprachen"
- type="password">
+  </main>
 
- <input type="submit" value="Absenden">
-
- <input type="reset" value="Zurücksetzen">
-
-
-</form>
-
-    </body>
+</body>
+</html>
