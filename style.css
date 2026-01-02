@@ -21,6 +21,28 @@ html, body {
   background: #2f3e4e;
   z-index: 1000;
 }
+.footer-box { 
+  max-width: 700px; /* Box nicht zu breit */
+   margin: 4rem auto; /* zentriert + Abstand */ 
+   padding: 1.5rem 2rem;
+    background-color: white; /* Karten-Look */
+     border-radius: 12px; /* abgerundete Ecken */
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* SCHATTEN */
+     } 
+     .footer-box ul {
+       list-style: none;
+        margin: 0;
+         padding: 0; 
+         display: grid; /* NEU */ 
+         grid-template-columns: repeat(2, 1fr);
+          /* 2 Spalten */
+           gap: 1rem 2rem; /* Abstand */ }
+
+.site-footer { 
+  text-align: center; /* damit alles in der mitte ist/ margin-top: 4rem; /* abstand nach oben damit das mit nix colidiert */ 
+  padding: 1rem 0; /* platz im footer allgemein */ 
+  font-size: 0.9rem; /* leicht kleinere Schrift */
+   color: #555; /* dunkles Grau */ }
 
 .nav-iframe {
   width: 100%;
