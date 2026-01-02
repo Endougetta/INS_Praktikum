@@ -138,21 +138,19 @@
   width: 140px;
   border-radius: 10px;
 }
-.cv-right{
-  flex: 1;            /* nimmt restlichen Platz */
-  text-align: center; /* Titel + Text mittig */
-}
-.cv-info{
-  margin-top: 0.5rem;
+.cv-info-list{
+  list-style: none;     /* keine Punkte */
+  padding: 0;
+  margin: 0.8rem 0 0;
 }
 
-.cv-info-line{
-  margin: 0.3rem 0;
+.cv-info-list li{
+  margin: 0.35rem 0;
   font-size: 1rem;
   color: #444;
 }
 
-.cv-info-line--small{
+.cv-info-list--small{
   font-size: 0.95rem;
   color: #666;
 }
