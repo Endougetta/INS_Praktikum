@@ -13,6 +13,7 @@
   padding: 0 1.5rem;
 }
 
+
 .site-header {
   position: fixed;
   top: 0;
@@ -34,9 +35,6 @@
   overflow: hidden;
 }
 
-.content {
-  margin-top: 80px; /* Platz für die feste Kopfzeile */
-}
 
 .title-main {
   text-align: center;
@@ -128,6 +126,12 @@
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
+.cv-photo{
+  width: 140px;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+}
+
 
 }
 
