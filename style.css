@@ -117,20 +117,32 @@
   color: #666;
 }
 .cv-header{
-  text-align: center;
+  display: flex;                 /* ← links / rechts */
+  align-items: center;           /* vertikal zentriert */
+  gap: 2.5rem;
+
   margin: 2.5rem auto 2rem;
   max-width: 900px;
 
-  padding: 1.5rem 1.5rem;
+  padding: 1.8rem 2rem;
   background: white;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
+
+.cv-left{
+  flex-shrink: 0;     /* Bild bleibt fix */
+}
+
 .cv-photo{
   width: 140px;
-  border-radius: 8px;
-  margin-bottom: 1.2rem;
+  border-radius: 10px;
 }
+.cv-right{
+  flex: 1;            /* nimmt restlichen Platz */
+  text-align: center; /* Titel + Text mittig */
+}
+
 
 
 }
