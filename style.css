@@ -83,6 +83,42 @@
   display: grid;                 /* NEU */
   grid-template-columns: repeat(2, 1fr); /* 2 Spalten */
   gap: 1rem 2rem;                /* Abstand */
+
+  .cv-header{
+  text-align: center;
+  margin: 2.5rem 0 2rem;   /* Abstand nach oben/unten */
+}
+
+.cv-title{
+  display: flex;           /* erlaubt Linien + Text in einer Reihe */
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.cv-title::before,
+.cv-title::after{
+  content: "";
+  flex: 1;                 /* Linien wachsen links/rechts */
+  height: 1px;
+  background: #d6dbe1;     /* hellgraue Linie */
+  max-width: 260px;        /* Linien nicht unendlich lang */
+}
+
+.cv-sub{
+  margin: 0.6rem 0 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+.cv-sub--small{
+  font-size: 0.95rem;
+  color: #666;
+}
+
 }
 
 
